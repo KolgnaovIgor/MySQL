@@ -1,10 +1,11 @@
-//create databese
-mysql> create database work default character set utf8 default collate utf8_general_ci;
-
-//show databases
-mysql> show databases;
-
-//input databeses
-mysql> mysql -u root -p
-Enter password: *****
-
+create table citys (id INT NOT NULL, name VARCHAR(255) NOT NULL);
+insert into citys(id, name) values(1, 'Moscow');
+insert into citys(id, name) values(2, 'Krasnodar');
+insert into citys(id, name) values(3, 'Sankt-Peterburg');
+insert into citys(id, name) values(4, 'Ivanovo');
+insert into citys(id, name) valutes(5, 'Brest');
+select * from citys;
+update citys set name = 'Saratov' where id = 3;
+delete from citys where id = 2;
+select * from citys order by name asc;
+exit
