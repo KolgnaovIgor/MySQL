@@ -1,3 +1,5 @@
+create database testing;
+use testing
 create table citys (id INT NOT NULL, name VARCHAR(255) NOT NULL);
 insert into citys(id, name) values(1, 'Moscow');
 insert into citys(id, name) values(2, 'Krasnodar');
